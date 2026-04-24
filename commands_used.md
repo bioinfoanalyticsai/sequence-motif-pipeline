@@ -1,4 +1,4 @@
-# Comand used in testing and running SeqMatcher Pipeline
+# Command used in testing and running SeqMatcher Pipeline
 
 ### be sure to use `./build.sh` to build the docker container
 
