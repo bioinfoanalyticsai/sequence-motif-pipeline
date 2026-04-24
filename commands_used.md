@@ -14,3 +14,8 @@ python sequence_matcher_with_motifs.py \
 python cluster_sequences_updated.py p651hcombined_peak_hits.tsv --n-clusters 7 --output-prefix p651hcombined_cluster_7_re
 
 python make_cluster_beds.py --input p651hcombined_cluster_7_re_results.tsv --prefix p651hcombined_cluster_7_re_beds --mode combined
+
+Command used to get the motifs from mm9 fasta genome file:
+python find_motif_both_strands_and_chromsome_wise.py \
+    -g genome.fa --jaspar AGGGGATTTCCC.jaspar \
+    -o genome_hits.bed --mode mismatch --max-mismatches 2
